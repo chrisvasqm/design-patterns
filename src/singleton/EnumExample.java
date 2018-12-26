@@ -7,6 +7,7 @@ public class EnumExample {
     }
 }
 
+// This is the preferred way of doing enums in Java, from the Effective Java book samples.
 enum EnumSingleton {
     INSTANCE;
 
