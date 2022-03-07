@@ -3,10 +3,12 @@ package com.chrisvasqm.exercises_part3.factory;
 import java.util.Date;
 
 public class Scheduler {
-    private Calendar calendar = new Calendar();
-
     public void schedule(Event event) {
         var today = new Date();
-        calendar.addEvent(event, today);
+        createCalendar().addEvent(event, today);
+    }
+
+    protected Calendar createCalendar() {
+        return new GregorianCalendar();
     }
 }
