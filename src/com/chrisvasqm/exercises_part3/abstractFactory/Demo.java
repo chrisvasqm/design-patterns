@@ -3,6 +3,6 @@ package com.chrisvasqm.exercises_part3.abstractFactory;
 public class Demo {
     public static void show() {
         var homePage = new HomePage();
-        homePage.setGoal(Goal.WEIGHT_LOSS);
+        homePage.setGoal(new WeightLossFactory());
     }
 }
